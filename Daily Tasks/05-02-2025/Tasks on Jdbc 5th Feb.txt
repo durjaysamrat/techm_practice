@@ -1,0 +1,15 @@
+Task 1 : Recursively insert multiple row/s into the table.
+	 Hint :: Use PreparedStatement
+
+Task 2 : Update the row of a table dynamically using Scanner class.
+
+Task 3 : Delete the row from the table by using a delete query using Scanner class.
+
+Task 4 : Create a menu driven program where the options would be
+			1. Insert a new Row 
+			2. Update a Row
+			3. Delete a Row
+			4. Select the row
+			5. Exit
+
+       Use PreparedStatement class for all the above tasks.
