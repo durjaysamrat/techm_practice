@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Mobile Navigation */
+        nav a {
+            flex-grow: 1;
+        }
+
+        /* Main Section */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px 10%;
+        }
+
+        .main-content .column {
+            flex: 1;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .main-content .column h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            /* Adjust header and navigation */
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            /* Stack the columns vertically */
+            .main-content {
+                padding: 20px;
+            }
+
+            .main-content .column {
+                flex: 100%;
+                margin-bottom: 20px;
+            }
+
+            /* Make navigation links full-width for smaller screens */
+            nav a {
+                text-align: left;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Further adjustments for very small screens */
+            header h1 {
+                font-size: 24px;
+            }
+
+            .main-content .column h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="task_4.html">About</a>
+        <a href="#">Services</a>
+        <a href="task_5.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="column">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, nisi et venenatis cursus, turpis felis consequat ipsum.</p>
+        </div>
+        <div class="column">
+            <h2>Our Services</h2>
+            <p>Proin condimentum ligula a lacus pretium, sit amet vulputate lorem condimentum. Nullam interdum, lorem ut fringilla.</p>
+        </div>
+        <div class="column">
+            <h2>Contact Us</h2>
+            <p>Sed tincidunt orci nec velit hendrerit, in pretium enim dictum. Donec sed sapien vitae purus facilisis mollis.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Landing Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
