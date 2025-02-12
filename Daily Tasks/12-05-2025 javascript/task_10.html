@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculation Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Sample Form Calculator:</h1>
+    <label for="num1">Enter Your Number1</label>
+    <input type="number" id="num1" value="0">
+
+    <label for="num2">Enter Your Number2</label>
+    <input type="number" id="num2" value="0">
+
+   <label for="operation">Select Operation:</label>
+   <select id="operation">
+    <option value="multiply">Multiply</option>
+    <option value="divide">Divide</option>
+   </select>
+
+   <button onclick="calculate()">Calculate</button>
+
+   <Label for="result">The result</Label>
+   <input type="text" id="result" readonly>
+
+   <script>
+    function calculate(){
+        const num1=parseFloat(document.getElementById("num1").value);
+        const num2=parseFloat(document.getElementById("num2").value);
+        const op=document.getElementById("operation").value;
+        let result;
+
+        if(op==="multiply"){
+            result = num1*num2;
+        } else if(op==="divide"){
+            if(num2===0){
+                result="Cannot Divide By Zero";
+            } else{
+                result=num1/num2;
+            }
+        }
+        document.getElementById("result").value = result;
+    }
+   </script>
+</body>
+</html>
