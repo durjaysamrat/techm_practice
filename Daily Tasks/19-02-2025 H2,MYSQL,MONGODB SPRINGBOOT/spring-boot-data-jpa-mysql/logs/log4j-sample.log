@@ -1,0 +1,101 @@
+2023-05-23T07:38:45,118 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting SpringBootDataJpaMysqlApplication using Java 1.8.0_131 on DESKTOP-0VT26FS with PID 13564 (E:\spring-boot-data-jpa-mysql\target\classes started by DELL in E:\spring-boot-data-jpa-mysql)
+2023-05-23T07:38:45,143 [restartedMain] INFO  (SpringApplication.java:631) - No active profile set, falling back to 1 default profile: "default"
+2023-05-23T07:38:45,353 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-23T07:38:45,354 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-23T07:38:46,701 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-23T07:38:46,922 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 154 ms. Found 1 JPA repository interfaces.
+2023-05-23T07:38:48,674 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8383 (http)
+2023-05-23T07:38:48,696 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8383"]
+2023-05-23T07:38:48,697 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-05-23T07:38:48,697 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-23T07:38:49,008 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-05-23T07:38:49,009 [restartedMain] INFO  (ServletWebServerApplicationContext.java:292) - Root WebApplicationContext: initialization completed in 3652 ms
+2023-05-23T07:38:49,464 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-23T07:38:49,529 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-05-23T07:38:49,816 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-23T07:38:50,159 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-05-23T07:38:50,930 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-05-23T07:38:50,960 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-05-23T07:38:52,199 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-23T07:38:52,216 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-23T07:38:53,462 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-23T07:38:54,329 [restartedMain] INFO  (OptionalLiveReloadServer.java:59) - LiveReload server is running on port 35729
+2023-05-23T07:38:54,348 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8383"]
+2023-05-23T07:38:54,387 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8383 (http) with context path ''
+2023-05-23T07:38:54,405 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started SpringBootDataJpaMysqlApplication in 10.941 seconds (JVM running for 12.42)
+2023-05-23T07:38:54,540 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    select
+        product0_.prod_id as prod_id1_0_0_,
+        product0_.prod_cost as prod_cos2_0_0_,
+        product0_.prod_name as prod_nam3_0_0_,
+        product0_.vendor_code as vendor_c4_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.prod_id=?
+2023-05-23T07:38:54,575 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [INTEGER] - [40]
+2023-05-23T07:38:54,669 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    insert 
+    into
+        product
+        (prod_cost, prod_name, vendor_code, prod_id) 
+    values
+        (?, ?, ?, ?)
+2023-05-23T07:38:54,671 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [DOUBLE] - [100.5]
+2023-05-23T07:38:54,673 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [2] as [VARCHAR] - [WashingMachine]
+2023-05-23T07:38:54,673 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [3] as [VARCHAR] - [XY]
+2023-05-23T07:38:54,674 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [4] as [INTEGER] - [40]
+2023-05-23T07:38:54,722 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    select
+        product0_.prod_id as prod_id1_0_0_,
+        product0_.prod_cost as prod_cos2_0_0_,
+        product0_.prod_name as prod_nam3_0_0_,
+        product0_.vendor_code as vendor_c4_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.prod_id=?
+2023-05-23T07:38:54,723 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [INTEGER] - [50]
+2023-05-23T07:38:54,728 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    insert 
+    into
+        product
+        (prod_cost, prod_name, vendor_code, prod_id) 
+    values
+        (?, ?, ?, ?)
+2023-05-23T07:38:54,729 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [DOUBLE] - [65000.0]
+2023-05-23T07:38:54,730 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [2] as [VARCHAR] - [TV]
+2023-05-23T07:38:54,730 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [3] as [VARCHAR] - [Sony]
+2023-05-23T07:38:54,731 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [4] as [INTEGER] - [50]
+2023-05-23T07:38:54,742 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    select
+        product0_.prod_id as prod_id1_0_0_,
+        product0_.prod_cost as prod_cos2_0_0_,
+        product0_.prod_name as prod_nam3_0_0_,
+        product0_.vendor_code as vendor_c4_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.prod_id=?
+2023-05-23T07:38:54,743 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [INTEGER] - [60]
+2023-05-23T07:38:54,746 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    insert 
+    into
+        product
+        (prod_cost, prod_name, vendor_code, prod_id) 
+    values
+        (?, ?, ?, ?)
+2023-05-23T07:38:54,747 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [DOUBLE] - [25000.0]
+2023-05-23T07:38:54,748 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [2] as [VARCHAR] - [Nord]
+2023-05-23T07:38:54,748 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [3] as [VARCHAR] - [OnePlus]
+2023-05-23T07:38:54,749 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [4] as [INTEGER] - [60]
+2023-05-23T07:38:55,137 [restartedMain] DEBUG (SqlStatementLogger.java:144) - 
+    select
+        product0_.vendor_code as col_0_0_,
+        product0_.prod_name as col_1_0_,
+        product0_.prod_cost as col_2_0_ 
+    from
+        product product0_ 
+    where
+        product0_.vendor_code=?
+2023-05-23T07:38:55,138 [restartedMain] TRACE (BasicBinder.java:64) - binding parameter [1] as [VARCHAR] - [AB]

@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+    <!-- Loan Bean Definitions -->
+    <bean id="loan" class="com.loan.beans.Loan">
+        <constructor-arg value="50000"/>
+        <constructor-arg value="7.5"/>
+        <constructor-arg value="10"/>
+    </bean>
+
+    <bean id="housingLoan" class="com.loan.beans.HousingLoan">
+        <constructor-arg value="200000"/>
+        <constructor-arg value="6.5"/>
+        <constructor-arg value="15"/>
+        <constructor-arg value="Apartment"/>
+    </bean>
+
+    <bean id="vehicleLoan" class="com.loan.beans.VehicleLoan">
+        <constructor-arg value="30000"/>
+        <constructor-arg value="8.0"/>
+        <constructor-arg value="5"/>
+        <constructor-arg value="Car"/>
+    </bean>
+
+</beans>

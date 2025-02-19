@@ -1,0 +1,5 @@
+# Created at 2025-02-19T15:59:00.069
+Boot Manifest-JAR contains absolute paths in classpath 'D:\techm stuff training\simple-mongo-example\simple-mongo-example\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
