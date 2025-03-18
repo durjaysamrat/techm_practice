@@ -1,7 +1,7 @@
-let nameLet1: string = "ravi";
+let nameLet1: string = "Samrat";
 let ageLet1: number = 21;
 
-var nameVar: string = "teja";
+var nameVar: string = "Durjay";
 var ageVar: number = 30;
 
 const nameConst1: string = "anurag";
