@@ -1,0 +1,13 @@
+var num1 = 10;
+var str1 = "Hello";
+var bool1 = true;
+var undef1 = undefined;
+console.log("Number:", num1 + 5);
+console.log("String:", str1 + " World");
+console.log("Boolean:", !bool1);
+console.log("Undefined:", undef1);
+var testNum = 20;
+var inferredNum = 100;
+console.log("Inferred Number:", inferredNum);
+var inferredStr = "TypeScript";
+console.log("Inferred String:", inferredStr);
